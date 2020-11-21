@@ -13,24 +13,24 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
 def check_mentions(api, keywords, since_id):
-    logger.info("Loading file~")
+    logger.info("loading")
     create_file(tweets_file)
     f = open(tweets_file, "r").readlines()
-    logger.info("Retrieving mentions!!")
+    logger.info("getting mentions")
     new_since_id = since_id
     for tweet in tweepy.Cursor(api.mentions_timeline,
                                since_id=since_id).items():
         if str(tweet.id) in f:
             continue
         new_since_id = max(tweet.id, new_since_id)
-        logger.info("Recording tweet ID :>")
+        logger.info("recording tweet id")
         f.append(tweet.id)
         with open(tweets_file, "a") as file:
             file.write(str(tweet.id) + "\n")
         if tweet.in_reply_to_status_id is not None:
             continue
         if any(keyword in tweet.text.lower() for keyword in keywords):
-               logger.info(f"Replying to @{tweet.user.screen_name}~~")
+               logger.info(f"replying to @{tweet.user.screen_name}~~")
 
                if "role" in tweet.text.lower():
                    role1 = getrole()
@@ -71,7 +71,7 @@ def main():
                since_id = 1
                while True:
                    since_id = check_mentions(api, ["role", "crossover"], since_id)
-                   logger.info("Listening ...")
+                   logger.info("listening")
                    time.sleep(60)
 
 if __name__ == "__main__":
