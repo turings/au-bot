@@ -44,12 +44,13 @@ Or, because zeitgeist:
 ## Roles
 Roles related to the trigger warnings listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
 <br>
-Illness/injury (e.g., doctor)
+Illness & Injury (e.g., doctor, nurse)
 <br>
 Warfare (e.g., soldier)
 <br>
 Death (e.g., funeral director)
 <br>
+Alcoholism (e.g. barkeep)
 Using the keyword ROLE-SAFE in a request tweet excludes these roles too.
 
 ## Crossovers
