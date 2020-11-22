@@ -53,6 +53,7 @@ Death (e.g., funeral director)
 Alcoholism (e.g. barkeep)
 Using the keyword ROLE-SAFE in a request tweet excludes these roles too.
 
+
 ## Crossovers
 Using the keyword CROSSOVER-SAFE in a request tweet excludes movies with the genres 'War', 'Horror' and 'Crime'.
 <br>
@@ -60,3 +61,6 @@ Characters portrayed by actors aged under 18 at the time of the movie/episode re
 
 # References
 Actor and movie/TV data from [TheMovieDB API](https://developers.themoviedb.org/)
+
+# Suggestions
+Please address any suggestions to [@murpcat](https://twitter.com/murpcat) on Twitter or [captainss](https://captainss.tumblr.com/) on Tumblr.
