@@ -55,7 +55,7 @@ Using the keyword ROLE-SAFE in a request tweet excludes these roles too.
 ## Crossovers
 Using the keyword CROSSOVER-SAFE in a request tweet excludes movies with the genres 'War', 'Horror' and 'Crime'.
 <br>
-Characters portrayed by actors aged under 21 at the time of the movie/episode release will be excluded as standard.
+Characters portrayed by actors aged under 21 at the time of the movie/episode release are excluded as standard.
 
 # References
 Actor and movie/TV data from [TheMovieDB API](https://developers.themoviedb.org/)
