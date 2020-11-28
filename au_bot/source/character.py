@@ -9,29 +9,43 @@ from source.variables import movie_end_point
 from source.variables import movie_key
 
 logger = logging.getLogger()
-invalidnames = ['self', 
-                'himself', 
-                'herself', 
-                'themselves', 
-                '(voice)', 
-                'voice', 
-                '']
+non_safe_genres = []
+invalid_names = ["self", "himself", "themselves", "(voice)", "voice", ""]
 
 # Crossover; returns film/tv character based on actor name
-def get_crossover_character(actor_name):
+def get_crossover_character(actor_name, safe):
+    # Populate this list if required
+    if safe:
+        if len(non_safe_genres) == 0:
+            get_non_safe_genres("tv")
+            get_non_safe_genres("movie")
     # Use character class to get a character
     char = character()
+    char.safe = safe
     if char.get_character(actor_name):
         return char.character_name + " (" + char.film_name + ")"
     else:
         return ""
 
+def get_non_safe_genres(type):
+    # Populate list of non-safe genres
+    end_point = movie_end_point + "/genre/" + type + "/list?api_key=" + movie_key + "&language=en-US"
+    r = get_json(end_point)
+    genres = r["genres"]
+    for g in genres:
+        genre = g["name"]
+        genre = genre.lower()    
+        if genre in ["war", "crime", "horror"] or any(g in genre for g in ["war", "crime", "horror"]):
+            non_safe_genres.append(str(g["id"]))                    
+
 class character:
     global character_name
     global film_name
+    global safe
     actor_id = 0
     actor_dob = datetime.datetime(1, 1, 1)
     film_date = datetime.datetime(1, 1, 1)
+    genres = []
     searches = 0
 
     def get_character(self, actor_name):
@@ -80,6 +94,7 @@ class character:
         self.character_name = credit["character"]
         # Work out other attributes based on TV/film
         media_type = credit["media_type"]
+        self.genres = credit["genre_ids"]
         if media_type == "tv":
             self.film_name = credit["original_name"]
             self.film_date = credit["first_air_date"]
@@ -113,6 +128,9 @@ class character:
             return False
         if not self.over_17():
             return False
-        if self.character_name.lower() in invalidnames:
+        if self.character_name.lower() in invalid_names:
             return False
+        if self.safe:
+            if self.genres in non_safe_genres:
+                return False
         return True

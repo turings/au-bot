@@ -1,51 +1,46 @@
 Accountant
 Actor
-Adjustor
 Administrator
 Advertising Assistant
 Advertising Executive
 Aerobic Instructor
 Aeronautical Engineer
 Agent
-Air Traffic Controller
 Aircraft Engineer
-Airman
-Airport Controller
-Ambulance Driver
+Airport Security
+Alien
+Ambulance Driver-NS
 Amusement Arcade Worker
-Anaesthetist
+Anaesthetist-NS
 Analytical Chemist
+Angel
 Antique Dealer
 Arborist
 Archaeologist
 Architect
 Archivist
-Armourer
-Aromatherapist
 Art Critic
 Art Dealer
 Art Historian
 Art Restorer
 Artist
+Assassin-NS
 Assistant Cook
-Assistant Nurse
+Assistant Nurse-NS
 Assistant Teacher
 Astrologer
 Astronomer
+Athlete
 Au Pair
 Auctioneer
 Auxiliary Nurse
 Baggage Handler
-Bailiff
 Baker
 Bank Clerk
 Bank Manager
-Baptist Minister
-Bar Manager
-Bar Steward
+Bar Manager-NS
 Barber
-Barkeep
-Barrister
+Bartender-NS
 Beautician
 Biologist
 Blacksmith
@@ -55,12 +50,11 @@ Book Seller
 Book-Keeper
 Bookmaker
 Botanist
-Brewer
+Bounty Hunter
+Brewer-NS
 Bricklayer
 Broadcaster
-Builder
 Bus Driver
-Butcher
 Butler
 Cab Driver
 Cafe Owner
@@ -74,54 +68,51 @@ Carpenter
 Cartographer
 Cartoonist
 Cashier
-Catering Staff
-Chaplain
+Celebrity
 Charity Worker
 Chauffeur
-Chef
+Chef-NS
 Chemist
-Child Minder
 Chimney Sweep
 Choreographer
-Church Warden
 Circus Worker
 Civil Servant
 Classroom Aide
 Cleaner
-Clergyman
-Coroner
-Counsellor
-Doctor
-Driver
+College Professor
+College Student
+Construction Worker
+Coroner-NS
+Cowboy
+Demon
+Doctor-NS
 Economist
 Editor
 Employee
 Engineer
 Executive
 Farmer
-Fireman
+Firefighter-NS
 Florist
 Flying Instructor
 Footballer
-Forensic Scientist
+Forensic Scientist-NS
 Forest Ranger
-Foster Parent
+Foster Parent-NS
 French Polisher
-Funeral Director
 Furniture Remover
 Gallery Owner
-Gambler
-Gamekeeper
+Gamekeeper-NS
 Garage Attendant
 Garden Designer
 Gardener
+Gas Station Attendant
 Geologist
+Ghost
 Goldsmith
 Golf Caddy
-Golfer
-Grave Digger
 Green Keeper
-Groom
+Hacker
 Hairdresser
 Handyman
 Historian
@@ -129,13 +120,11 @@ History Teacher
 Horse Riding Instructor
 Horse Trainer
 Horticulturalist
-Hospital Doctor
-Hospital Orderly
-Hospital Worker
-Stay-At-Home Parent
-Hypnotherapist
-Hypnotist
-Ice Cream Vendor
+Hospital Doctor-NS
+Hospital Orderly-NS
+Hospital Worker-NS
+Hypnotist-NS
+Ice Cream Vendor-NS
 Illustrator
 Interior Decorator
 Interior Designer
@@ -152,9 +141,7 @@ Journalist
 Judge
 Keep Fit Instructor
 Kennel Hand
-Kitchen Worker
-Knitter
-Laboratory Analyst
+Kitchen Worker-NS
 Landlord
 Laundry Worker
 Law Clerk
@@ -163,7 +150,7 @@ Lawyer
 Leather Worker
 Legal Advisor
 Librarian
-Lifeguard
+Lifeguard-NS
 Lift Engineer
 Lighthouse Keeper
 Linguist
@@ -171,67 +158,73 @@ Locksmith
 Lumberjack
 Magician
 Make Up Artist
-Marine Pilot
+Marine Pilot-NS
+Marine-NS
 Massage Therapist
 Mathematician
 Maths Teacher
 Mechanic
-Medical Student
+Medical Student-NS
 Meteorologist
 Miner
-Mortician
+Mobster-NS
+Model
+Mortician-NS
 Motor Racing Driver
 Museum Assistant
 Music Teacher
 Musician
-Nanny
+Nanny-NS
 Navigator
 Night Porter
 Nuclear Scientist
-Nurse
-Nursery Assistant
+Nurse-NS
 Opera Singer
 Ornithologist
-Paediatrician
+Paediatrician-NS
 Painter
 Palaeontologist
-Paramedic
+Paparazzi
+Paramedic-NS
 Park Ranger
 Party Planner
-Pastry Chef
+Pastry Chef-NS
 Pest Controller
 Pet Minder
 Photographer
 Physicist
-Physiotherapist
+Physiotherapist-NS
 Piano Teacher
 Pilot
+Pirate-NS
 Plumber
 Pool Attendant
 Postal Worker
 Potter
 Preacher
-Prison Chaplain
-Prison Officer
+Prison Chaplain-NS
+Prison Inmate-NS
+Prison Officer-NS
 Private Investigator
 Producer
-Professional Boxer
-Professional Racing
-Professional Wrestler
-Psychiatrist
+Professional Boxer-NS
+Professional Race Car Driver
+Professional Wrestler-NS
 Publisher
 Racehorse Groom
 Radio Presenter
-Rally Driver
 Receptionist
 Repair Person
 Reporter
 Researcher
-Restaurateur
+Restaurateur-NS
+Revolutionary
 Riveter
 Road Worker
+Rockstar
 Roofer
 Rose Grower
+Sailor
 Salesperson
 Scaffolder
 Scientist
@@ -244,22 +237,26 @@ Servant
 Shepherd
 Sheriff
 Shipyard Worker
-Shop Assistant
+Socialite
 Software Engineer
-Soldier
+Soldier-NS
 Song Writer
+Space Pirate-NS
 Sports Coach
 Sportsperson
+Spy
 Stable Hand
 Stage Director
 Stage Hand
+Stay-At-Home Parent-NS
 Stockbroker
+Store Assistant
 Street Entertainer
-Student
-Student Nurse
+Student Nurse-NS
 Student Teacher
-Supply Teacher
-Surgeon
+Substitute Teacher
+Superhero
+Surgeon-NS
 Tailor
 Tattooist
 Taxi Driver
@@ -271,26 +268,10 @@ Tour Guide
 Translator
 Tree Surgeon
 Typist
-Undertaker
+Vampire
 Violinist
-Waitstaff
-Waitress
+Waitstaff-NS
 Window Cleaner
-Wood Cutter
 Wood Worker
 Writer
-Yacht Master
-Yard Manager
-Youth Worker
-Zoo Keeper
-Zoologist
-Angel
-Cowboy
-Model
-Demon
-Hacker
-Space Pirate
-Pirate
-Marine
-Socialite
-Revolutionary
+YouTuber
