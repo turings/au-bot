@@ -36,7 +36,7 @@ Or:
 twitter_user: @au_bot ROLEDIFF me!!
 au_bot: @twitter_user Violinist/Music Teacher
 ```
-That^ degree of congruity may not be achieved every time. You might get `Violinist/Tennis Coach`. I'd still read it.
+That^ degree of congruity may not be achieved every time. You could easily get `Violinist/Tennis Coach`. I'd still read it.
 
 
 ## CROSSOVER [Actor Name]/[Actor Name]
@@ -81,4 +81,4 @@ Characters portrayed by actors aged under 18 at the time of the movie or episode
 Actor and movie/TV data is sourced from [TheMovieDB API](https://www.themoviedb.org/documentation/api/terms-of-use).
 
 # Suggestions
-Please submit any suggestions to [@thegardendoor](https://twitter.com/thegardendoor) on Twitter or [captainss](https://captainss.tumblr.com/) on Tumblr.
+Please submit any suggestions to me via Twitter ([@thegardendoor](https://twitter.com/thegardendoor)) or Tumblr ([@captainss](https://captainss.tumblr.com/)).
