@@ -65,7 +65,7 @@ Illness & Injury (e.g., doctor, nurse)
 <br>
 Warfare (e.g., soldier)
 <br>
-Alcoholism (e.g. barkeep)
+Alcoholism (e.g. bartender)
 Using the keyword ROLESAME-SAFE or ROLEDIFF-SAFE in your request tweet excludes these roles too.
 
 
