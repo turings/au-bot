@@ -66,11 +66,14 @@ Illness & Injury (e.g., doctor, nurse)
 Warfare (e.g., soldier)
 <br>
 Alcoholism (e.g. bartender)
+<br>
+Food (e.g. chef)
+<br>
 Using the keyword ROLESAME-SAFE or ROLEDIFF-SAFE in your request tweet excludes these roles too.
 
 
 ## Crossovers
-Using the keyword CROSSOVER-SAFE in your request tweet makes sure that characters from movies and shows with the genres 'War', 'Horror' and 'Crime' are excluded.
+Using the keyword CROSSOVER-SAFE in your request tweet makes sure that characters from movies/shows with the genres 'War', 'Horror' and 'Crime' are not considered for prompts.
 <br>
 Characters portrayed by actors aged under 18 at the time of the movie or episode's release are excluded as standard.
 
