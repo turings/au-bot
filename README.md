@@ -59,7 +59,7 @@ au_bot: @twitter_user Jake Gray (DeVour)/Eric Bragg (Charmed)
 # Content Filters
 
 ## Roles
-Roles related to the trigger warnings listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
+Roles related to the content types listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
 <br>
 Illness & Injury (e.g., doctor, nurse)
 <br>
