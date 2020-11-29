@@ -36,7 +36,7 @@ Or:
 twitter_user: @au_bot ROLEDIFF me!!
 au_bot: @twitter_user Violinist/Music Teacher
 ```
-That degree of congruity might not be achieved every time. You could easily get `Violinist/Tennis Coach`. I'd read it?
+You might not get that degree of congruity every time. You could easily get `Violinist/Tennis Coach`. I'd read it?
 
 
 ## CROSSOVER [Actor Name]/[Actor Name]
