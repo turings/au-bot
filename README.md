@@ -73,7 +73,7 @@ Using the keyword ROLESAME-SAFE or ROLEDIFF-SAFE in your request tweet excludes 
 
 
 ## Crossovers
-Using the keyword CROSSOVER-SAFE in your request tweet makes sure that characters from movies/shows with the genres 'War', 'Horror' and 'Crime' are not considered for prompts.
+Using the keyword CROSSOVER-SAFE in your request tweet makes sure that characters from movies/shows with the genres 'War', 'Horror' and 'Crime' are not returned.
 <br>
 Characters portrayed by actors aged under 18 at the time of the movie or episode's release are automatically excluded.
 
