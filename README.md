@@ -3,64 +3,82 @@ A Twitter bot that generates AU prompts for fanfiction writers.
 
 # Keywords
 
-## ROLE
-Use the ROLE keyword to generate role-based prompts.
+## ROLESAME
+Use the ROLESAME keyword in your tweet to generate role-based prompts.
 <br>
 <br>
 For example:
 <br>
-`twitteruser: @au_bot Send me a sweet ROLE prompt, dude!`
+```
+twitter_user: @au_bot Send me a sweet ROLESAME prompt, dude
+au_bot: @twitter_user Park Rangers
+```
+Or:
 <br>
-`au_bot: @twitteruser Socialite/Tennis Coach`
+```
+twitter_user: @au_bot I'd love a ROLESAME prompt
+au_bot: @twitter_user Roommates
+```
+
+## ROLEDIFF
+Use the ROLE keyword in your tweet to generate prompts with distinct roles for your OTPs.
 <br>
-Or
 <br>
-`au_bot: @twitteruser Violinist/Music Teacher`
+For example:
 <br>
+```
+twitter_user: @au_bot Any chance of a ROLEDIFF prompt?
+au_bot: @twitter_user Socialite/Tennis Coach
+```
+Or:
 <br>
-Of course, one can't guarantee that all (or even most) of these prompts would have the same degree of congruity. You might get `Violinist/Tennis Coach`.
+```
+twitter_user: @au_bot ROLEDIFF me!!
+au_bot: @twitter_user Violinist/Music Teacher
+```
+That^ degree of congruity may not be achieved every time. You could easily get `Violinist/Tennis Coach`. I'd still read it.
+
 
 ## CROSSOVER [Actor Name]/[Actor Name]
-Use the CROSSOVER keyword to generate TV show/movie prompts.
+Use the CROSSOVER keyword to generate TV/movie character crossover prompts.
 <br>
 <br>
 For example:
 <br>
-`twitteruser: @au_bot CROSSOVER Joseph Mazzello/Rami Malek please?`
-<br>
-`au_bot: @twitteruser Dustin Moskovitz (The Social Network)/Elliot Alderson (Mr. Robot)`
-<br>
+```
+twitter_user: @au_bot CROSSOVER Joseph Mazzello/Rami Malek please?
+au_bot: @twitter_user Dustin Moskovitz (The Social Network)/Elliot Alderson (Mr. Robot)
+```
 Or, because zeitgeist:
 <br>
-`twitteruser: @au_bot CROSSOVER Jensen Ackles/Misha Collins if you’d be so kind`
-<br>
-`au_bot: @twitteruser C.J. (Dawson’s Creek)/Tony (Girl, Interrupted)`
-<br>
-<br>
-(I haven’t seen Dawson’s Creek, so I have no idea whether the latter would make a good fic.)
+```
+twitter_user: @au_bot CROSSOVER Jensen Ackles/Misha Collins if you’d be so kind
+au_bot: @twitter_user Jake Gray (DeVour)/Eric Bragg (Charmed)
+```
 
 # Content Filters
 
 ## Roles
-Roles related to the trigger warnings listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
+Roles related to the content types listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
 <br>
 Illness & Injury (e.g., doctor, nurse)
 <br>
 Warfare (e.g., soldier)
 <br>
-Death (e.g., funeral director)
+Alcoholism (e.g. bartender)
 <br>
-Alcoholism (e.g. barkeep)
-Using the keyword ROLE-SAFE in a request tweet excludes these roles too.
+Food (e.g. chef)
+<br>
+Using the keyword ROLESAME-SAFE or ROLEDIFF-SAFE in your request tweet excludes these roles too.
 
 
 ## Crossovers
-Using the keyword CROSSOVER-SAFE in a request tweet excludes movies with the genres 'War', 'Horror' and 'Crime'.
+Using the keyword CROSSOVER-SAFE in your request tweet makes sure that characters from movies/shows with the genres 'War', 'Horror' and 'Crime' are not considered for prompts.
 <br>
-Characters portrayed by actors aged under 18 at the time of the movie/episode release are excluded as standard.
+Characters portrayed by actors aged under 18 at the time of the movie or episode's release are excluded as standard.
 
 # References
-Actor and movie/TV data from [TheMovieDB API](https://developers.themoviedb.org/)
+Actor and movie/TV data is sourced from [TheMovieDB API](https://www.themoviedb.org/documentation/api/terms-of-use).
 
 # Suggestions
-Please address any suggestions to [@murpcat](https://twitter.com/murpcat) on Twitter or [captainss](https://captainss.tumblr.com/) on Tumblr.
+Please submit any suggestions to me via Twitter ([@thegardendoor](https://twitter.com/thegardendoor)) or Tumblr ([@captainss](https://captainss.tumblr.com/)).
