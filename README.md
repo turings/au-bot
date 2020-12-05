@@ -21,7 +21,7 @@ au_bot: @twitter_user Roommates
 ```
 
 ## ROLEDIFF :construction_worker::heart::guardsman:
-Use the ROLE keyword in your tweet to generate prompts with distinct roles for your OTPs.
+Use the ROLE keyword in your tweet to generate prompts with distinct roles for your pairing.
 <br>
 <br>
 For example:
@@ -75,7 +75,7 @@ Using the keyword ROLESAME-SAFE or ROLEDIFF-SAFE in your request tweet excludes 
 ## Crossovers
 Using the keyword CROSSOVER-SAFE in your request tweet makes sure that characters from movies/shows with the genres 'War', 'Horror' and 'Crime' are not considered for prompts.
 <br>
-Characters portrayed by actors aged under 18 at the time of the movie or episode's release are excluded as standard.
+Characters portrayed by actors aged under 18 at the time of the movie or episode's release are automatically excluded.
 
 # References
 Actor and movie/TV data is sourced from [TheMovieDB API](https://www.themoviedb.org/documentation/api/terms-of-use).
