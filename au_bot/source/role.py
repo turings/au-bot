@@ -1,9 +1,8 @@
 import csv
 import string
 import logging
+import os
 from source.tools import get_random
-from source.variables import roles_same_file
-from source.variables import roles_diff_file
 
 logger = logging.getLogger()
 
@@ -11,11 +10,12 @@ logger = logging.getLogger()
 def get_role(safe, same):
     # Import roles.csv
     if same:
-        file = roles_same_file
+        file = os.environ['ROLES_SAME_FILE']
     else:
-        file = roles_diff_file
+        file = os.environ['ROLES_DIFF_FILE']
     try:
        role = ""
+       # Until a valid role has been returned
        while role == "":
             role = choose_role(safe, file)
     except:
@@ -30,9 +30,11 @@ def choose_role(safe, file):
     # Select random role
             role = get_random(lst)
             role = role[0]
-            if safe: 
-                if "-ns" in role.lower():
+            if "-ns" in role.lower():
+                if safe: 
                     return ""
+                else:
+                    role = role.Replace("-NS", "")
 
             return role
 

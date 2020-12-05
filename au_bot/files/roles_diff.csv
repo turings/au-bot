@@ -1,83 +1,53 @@
 Accountant
 Actor
-Administrator
-Advertising Assistant
 Advertising Executive
 Aerobic Instructor
-Aeronautical Engineer
-Agent
-Aircraft Engineer
 Airport Security
 Alien
-Ambulance Driver-NS
 Amusement Arcade Worker
-Anaesthetist-NS
-Analytical Chemist
 Angel
 Antique Dealer
-Arborist
 Archaeologist
 Architect
 Archivist
 Art Critic
-Art Dealer
+Art Gallery Guide
 Art Historian
-Art Restorer
 Artist
 Assassin-NS
-Assistant Cook
-Assistant Nurse-NS
-Assistant Teacher
 Astrologer
 Astronomer
 Athlete
 Au Pair
 Auctioneer
-Auxiliary Nurse
 Baggage Handler
-Baker
-Bank Clerk
+Baker-NS
 Bank Manager
-Bar Manager-NS
+Bank Teller
 Barber
 Bartender-NS
+Baseball Player
 Beautician
-Biologist
 Blacksmith
-Boat Builder
 Bodyguard
 Book Seller
 Book-Keeper
-Bookmaker
-Botanist
 Bounty Hunter
-Brewer-NS
-Bricklayer
-Broadcaster
 Bus Driver
 Butler
 Cab Driver
-Cafe Owner
 Cafe Worker
 Cameraman
-Car Dealer
 Car Park Attendant
 Car Salesman
 Car Valet
-Carpenter
-Cartographer
-Cartoonist
 Cashier
 Celebrity
 Charity Worker
 Chauffeur
 Chef-NS
-Chemist
 Chimney Sweep
-Choreographer
 Circus Worker
-Civil Servant
-Classroom Aide
 Cleaner
 College Professor
 College Student
@@ -89,27 +59,17 @@ Doctor-NS
 Economist
 Editor
 Employee
-Engineer
-Executive
+Employer
 Farmer
 Firefighter-NS
 Florist
-Flying Instructor
-Footballer
-Forensic Scientist-NS
 Forest Ranger
 Foster Parent-NS
-French Polisher
 Furniture Remover
-Gallery Owner
 Gamekeeper-NS
-Garage Attendant
-Garden Designer
 Gardener
 Gas Station Attendant
-Geologist
 Ghost
-Goldsmith
 Golf Caddy
 Green Keeper
 Hacker
@@ -117,82 +77,56 @@ Hairdresser
 Handyman
 Historian
 History Teacher
+Hockey Player
 Horse Riding Instructor
-Horse Trainer
-Horticulturalist
-Hospital Doctor-NS
-Hospital Orderly-NS
 Hospital Worker-NS
 Hypnotist-NS
 Ice Cream Vendor-NS
-Illustrator
 Interior Decorator
 Interior Designer
 Interpreter
 Interviewer
-Inventor
-Investment Banker
-Ironmonger
 Janitor
 Jazz Composer
-Jeweller
 Jockey
 Journalist
 Judge
-Keep Fit Instructor
-Kennel Hand
 Kitchen Worker-NS
 Landlord
-Laundry Worker
-Law Clerk
 Lawn Mower
 Lawyer
-Leather Worker
 Legal Advisor
 Librarian
 Lifeguard-NS
 Lift Engineer
 Lighthouse Keeper
-Linguist
 Locksmith
 Lumberjack
 Magician
-Make Up Artist
-Marine Pilot-NS
 Marine-NS
 Massage Therapist
-Mathematician
-Maths Teacher
 Mechanic
 Medical Student-NS
 Meteorologist
 Miner
 Mobster-NS
 Model
-Mortician-NS
-Motor Racing Driver
-Museum Assistant
+Museum Worker
 Music Teacher
 Musician
 Nanny-NS
-Navigator
 Night Porter
 Nuclear Scientist
 Nurse-NS
 Opera Singer
-Ornithologist
-Paediatrician-NS
 Painter
-Palaeontologist
 Paparazzi
 Paramedic-NS
 Park Ranger
 Party Planner
 Pastry Chef-NS
-Pest Controller
 Pet Minder
 Photographer
-Physicist
 Physiotherapist-NS
 Piano Teacher
 Pilot
@@ -200,50 +134,39 @@ Pirate-NS
 Plumber
 Pool Attendant
 Postal Worker
-Potter
 Preacher
 Prison Chaplain-NS
 Prison Inmate-NS
 Prison Officer-NS
 Private Investigator
-Producer
 Professional Boxer-NS
 Professional Race Car Driver
 Professional Wrestler-NS
-Publisher
+Race Car Driver
 Racehorse Groom
 Radio Presenter
 Receptionist
 Repair Person
 Reporter
-Researcher
-Restaurateur-NS
 Revolutionary
 Riveter
 Road Worker
 Rockstar
-Roofer
-Rose Grower
 Sailor
 Salesperson
-Scaffolder
 Scientist
-Scrap Dealer
 Script Writer
 Sculptor
 Secretary
 Security Guard
 Servant
-Shepherd
 Sheriff
-Shipyard Worker
 Socialite
 Software Engineer
 Soldier-NS
 Song Writer
 Space Pirate-NS
 Sports Coach
-Sportsperson
 Spy
 Stable Hand
 Stage Director
@@ -252,8 +175,6 @@ Stay-At-Home Parent-NS
 Stockbroker
 Store Assistant
 Street Entertainer
-Student Nurse-NS
-Student Teacher
 Substitute Teacher
 Superhero
 Surgeon-NS
@@ -262,16 +183,13 @@ Tattooist
 Taxi Driver
 Teacher
 Teachers Assistant
-Television Presenter
 Tennis Coach
 Tour Guide
 Translator
-Tree Surgeon
-Typist
+TV Presenter
 Vampire
 Violinist
 Waitstaff-NS
 Window Cleaner
-Wood Worker
 Writer
 YouTuber

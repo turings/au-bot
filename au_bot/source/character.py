@@ -1,16 +1,14 @@
 import string
 import logging
 import datetime
+import os
 from source.tools import get_random
 from source.tools import get_json
 from source.tools import get_date
 from dateutil.relativedelta import relativedelta
-from source.variables import movie_end_point
-from source.variables import movie_key
 
 logger = logging.getLogger()
 non_safe_genres = []
-invalid_names = ["self", "himself", "themselves", "(voice)", "voice", ""]
 
 # Crossover; returns film/tv character based on actor name
 def get_crossover_character(actor_name, safe):
@@ -29,7 +27,7 @@ def get_crossover_character(actor_name, safe):
 
 def get_non_safe_genres(type):
     # Populate list of non-safe genres
-    end_point = movie_end_point + "/genre/" + type + "/list?api_key=" + movie_key + "&language=en-US"
+    end_point = os.environ['MOVIE_END_POINT'] + "/genre/" + type + "/list?api_key=" + os.environ['MOVIE_KEY'] + "&language=en-US"
     r = get_json(end_point)
     genres = r["genres"]
     for g in genres:
@@ -63,7 +61,7 @@ class character:
     def get_actor(self, actor_name):
         try:
             actor_name = actor_name.replace(" ", "%2B")
-            end_point = movie_end_point + "/search/person?api_key=" + movie_key + "&language=en-US&query=" + actor_name
+            end_point = os.environ['MOVIE_END_POINT'] + "/search/person?api_key=" + os.environ['MOVIE_KEY'] + "&language=en-US&query=" + actor_name
             # Search for actor, find ID
             r = get_json(end_point)
             i = r["results"][0]
@@ -76,7 +74,7 @@ class character:
 
     def get_dob(self):
         try:
-            end_point = movie_end_point + "/person/" + str(self.actor_id) + "?api_key=" + movie_key + "&language=en-US"
+            end_point = os.environ['MOVIE_END_POINT'] + "/person/" + str(self.actor_id) + "?api_key=" + os.environ['MOVIE_KEY'] + "&language=en-US"
             # Use ID to find actor record
             r = get_json(end_point)
             self.actor_dob = r["birthday"]
@@ -85,7 +83,7 @@ class character:
             return False
 
     def get_credit(self):
-        end_point = movie_end_point + "/person/" + str(self.actor_id) + "/combined_credits?api_key=" + movie_key + "&language=en-US"
+        end_point = os.environ['MOVIE_END_POINT'] + "/person/" + str(self.actor_id) + "/combined_credits?api_key=" + os.environ['MOVIE_KEY'] + "&language=en-US"
         # User ID to get random credit
         credits = get_json(end_point)
         credits = credits["cast"]
@@ -128,9 +126,10 @@ class character:
             return False
         if not self.over_17():
             return False
-        if self.character_name.lower() in invalid_names:
+        if self.character_name.lower() in ["self", "himself", "herself", "themselves", "(voice)", "voice", "narrator", ""]:
             return False
         if self.safe:
+            # Check non-safe genre IDs
             if self.genres in non_safe_genres:
                 return False
         return True
