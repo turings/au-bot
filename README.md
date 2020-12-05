@@ -3,7 +3,7 @@ A Twitter bot that generates AU prompts for fanfiction writers.
 
 # Keywords
 
-## ROLESAME
+## ROLESAME :construction_worker::heart::construction_worker:
 Use the ROLESAME keyword in your tweet to generate role-based prompts.
 <br>
 <br>
@@ -20,7 +20,7 @@ twitter_user: @au_bot I'd love a ROLESAME prompt
 au_bot: @twitter_user Roommates
 ```
 
-## ROLEDIFF
+## ROLEDIFF :construction_worker::heart::guardsman:
 Use the ROLE keyword in your tweet to generate prompts with distinct roles for your OTPs.
 <br>
 <br>
