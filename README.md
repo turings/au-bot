@@ -3,20 +3,20 @@ A Twitter bot that generates AU prompts for fanfiction writers.
 
 # Keywords
 
-## ROLESAME
-Use the ROLESAME keyword in your tweet to generate role-based prompts.
+## ROLE
+Use the ROLE keyword in your tweet to generate role-based prompts.
 <br>
 <br>
 For example:
 <br>
 ```
-twitter_user: @au_bot Send me a sweet ROLESAME prompt, dude
+twitter_user: @au_bot Send me a sweet ROLE prompt, dude
 au_bot: @twitter_user Park Rangers
 ```
 Or:
 <br>
 ```
-twitter_user: @au_bot I'd love a ROLESAME prompt
+twitter_user: @au_bot I'd love a ROLE prompt
 au_bot: @twitter_user Roommates
 ```
 
