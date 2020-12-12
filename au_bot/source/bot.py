@@ -28,7 +28,7 @@ def check_mentions(api, since_id):
         # If this tweet already exists in the file, ignore it
         if str(tweet.id) + "\n" in f:
             continue
-        logger.info("recording tweet id")
+        logger.info("Recording tweet ID")
         # Add this tweet to the file
         f.append(str(tweet.id) + "\n")
         with open(os.environ['TWEETS_FILE'], "a") as file:
@@ -95,7 +95,7 @@ def main():
                # Check for mentions after every 60 seconds
                while True:
                    since_id = check_mentions(api, since_id)
-                   logger.info("listening")
+                   logger.info("Listening")
                    time.sleep(60)
 
 if __name__ == "__main__":
