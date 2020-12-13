@@ -10,13 +10,13 @@ Use the ROLE keyword in your tweet to generate role-based prompts.
 For example:
 <br>
 ```
-twitter_user: @au_bot Send me a sweet ROLE prompt, dude
+twitter_user: @au_bot ROLE
 au_bot: @twitter_user Park Rangers
 ```
 Or:
 <br>
 ```
-twitter_user: @au_bot I'd love a ROLE prompt
+twitter_user: @au_bot Send me a sweet ROLE prompt, dude.
 au_bot: @twitter_user 1980s yuppies
 ```
 
@@ -27,7 +27,7 @@ Use the ROLEDIFF keyword in your tweet to generate prompts with distinct roles f
 For example:
 <br>
 ```
-twitter_user: @au_bot Any chance of a ROLEDIFF prompt?
+twitter_user: @au_bot ROLEDIFF
 au_bot: @twitter_user Socialite/Tennis Coach
 ```
 Or:
@@ -45,13 +45,13 @@ If you use the CROSSOVER keyword, the bot will return a popular TV/movie fandom.
 For example:
 <br>
 ```
-twitter_user: @au_bot I need a CROSSOVER, stat!
+twitter_user: @au_bot CROSSOVER
 au_bot: @twitter_user Pacific Rim
 ```
 Or:
 <br>
 ```
-twitter_user: @au_bou Send me a CROSSOVER
+twitter_user: @au_bou I need a CROSSOVER prompt, stat!
 au_bot: @twitter_user House MD
 ```
 
@@ -63,7 +63,7 @@ You can also use the CROSSOVER keyword with a specific actor pairing in [square/
 For example:
 <br>
 ```
-twitter_user: @au_bot CROSSOVER [Joseph Mazzello/Rami Malek] please?
+twitter_user: @au_bot CROSSOVER [Joseph Mazzello/Rami Malek]
 au_bot: @twitter_user Dustin Moskovitz (The Social Network)/Elliot Alderson (Mr. Robot)
 ```
 Or, because zeitgeist:
