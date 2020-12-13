@@ -39,7 +39,6 @@ def check_mentions(api, since_id):
             continue
         # If this tweet contains one of the keywords
         if any(keyword in tweet.text.lower() for keyword in ["crossover", "role"]):
-               logger.info(f"Replying to @{tweet.user.screen_name}")
                # Different roles
                if " rolediff" in tweet.text.lower():
                    safe = False
@@ -50,6 +49,7 @@ def check_mentions(api, since_id):
                        role2 = get_role(safe, False)
                        if not role2 == "":
                            try:
+                                logger.info(f"Replying to @{tweet.user.screen_name}")
                                 api.update_status(status= "@" + tweet.user.screen_name + " " + role1 + "/" + role2,
                                     in_reply_to_status_id=tweet.id,)
                            except:
@@ -62,6 +62,7 @@ def check_mentions(api, since_id):
                    role = get_role(safe, True)
                    if not role == "":
                             try:
+                                logger.info(f"Replying to @{tweet.user.screen_name}")
                                 api.update_status(status= "@" + tweet.user.screen_name + " " + role,
                                     in_reply_to_status_id=tweet.id,)
                             except:
@@ -86,6 +87,7 @@ def check_mentions(api, since_id):
                                     character2 = get_crossover_character(actor2, safe)
                                     if not character2 == "":
                                         try:
+                                            logger.info(f"Replying to @{tweet.user.screen_name}")
                                             api.update_status(status= "@" + tweet.user.screen_name + " " + character1 + "/" + character2,
                                                  in_reply_to_status_id=tweet.id,)
                                         except:
@@ -95,6 +97,7 @@ def check_mentions(api, since_id):
                        fandom = get_crossover_fandom()
                        if not fandom == "":
                            try:
+                                logger.info(f"Replying to @{tweet.user.screen_name}")
                                 api.update_status(status= "@" + tweet.user.screen_name + " " + fandom,
                                     in_reply_to_status_id=tweet.id,)
                            except:

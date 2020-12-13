@@ -34,7 +34,7 @@ def choose_role(safe, file):
                 if safe: 
                     return ""
                 else:
-                    role = role.Replace("-NS", "")
+                    role = role.replace("-NS", "")
 
             return role
 
