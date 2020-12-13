@@ -2,7 +2,8 @@
 A Twitter bot that generates AU prompts for fanfiction writers.
 
 # Keywords
-
+N.B. None of the keywords are case sensitive.
+<br>
 ## ROLE
 Use the ROLE keyword in your tweet to generate role-based prompts.
 <br>
@@ -16,7 +17,7 @@ au_bot: @twitter_user Park Rangers
 Or:
 <br>
 ```
-twitter_user: @au_bot Send me a sweet ROLE prompt, dude.
+twitter_user: @au_bot Send me a sweet role prompt, dude.
 au_bot: @twitter_user 1980s yuppies
 ```
 
@@ -33,7 +34,7 @@ au_bot: @twitter_user Socialite/Tennis Coach
 Or:
 <br>
 ```
-twitter_user: @au_bot ROLEDIFF me!!
+twitter_user: @au_bot rolediff me!!
 au_bot: @twitter_user Violinist/Music Teacher
 ```
 (Please note that the bot will not always return prompts with that^ degree of congruity. You could easily get `Violinist/Tennis Coach`. I'd still read it.)
@@ -51,7 +52,7 @@ au_bot: @twitter_user Pacific Rim
 Or:
 <br>
 ```
-twitter_user: @au_bou I need a CROSSOVER prompt, stat!
+twitter_user: @au_bou I need a crossover prompt, stat!
 au_bot: @twitter_user House MD
 ```
 
@@ -69,7 +70,7 @@ au_bot: @twitter_user Dustin Moskovitz (The Social Network)/Elliot Alderson (Mr.
 Or, because zeitgeist:
 <br>
 ```
-twitter_user: @au_bot CROSSOVER [Jensen Ackles/Misha Collins] if you’d be so kind
+twitter_user: @au_bot please crossover [Jensen Ackles/Misha Collins] if you’d be so kind
 au_bot: @twitter_user Jake Gray (DeVour)/Eric Bragg (Charmed)
 ```
 
