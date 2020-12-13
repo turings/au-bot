@@ -95,7 +95,7 @@ Unfortunately, there is currently no content filter for **fandom** prompts.
 <br>
 For **character** prompts, using the keyword CROSSOVER-SAFE in your request tweet makes sure that characters from movies/shows with the genres 'War', 'Horror' and 'Crime' are not returned.
 <br>
-Characters portrayed by actors aged under 18 at the time of the movie or episode's release are automatically excluded.
+Characters portrayed by actors who were under the age of 18 at the time of the movie or episode's release will never be returned.
 
 # References
 The popular fandoms are periodically scraped from [AO3](https://archiveofourown.org/).
