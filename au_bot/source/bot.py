@@ -49,8 +49,11 @@ def check_mentions(api, since_id):
                    if not role1 == "":
                        role2 = get_role(safe, False)
                        if not role2 == "":
-                            api.update_status(status= "@" + tweet.user.screen_name + " " + role1 + "/" + role2,
-                                in_reply_to_status_id=tweet.id,)
+                           try:
+                                api.update_status(status= "@" + tweet.user.screen_name + " " + role1 + "/" + role2,
+                                    in_reply_to_status_id=tweet.id,)
+                           except:
+                                logger.info("Could not reply @ ROLEDIFF")
                # Same roles
                elif " role" in tweet.text.lower():
                    safe = False
@@ -58,8 +61,11 @@ def check_mentions(api, since_id):
                        safe = True
                    role = get_role(safe, True)
                    if not role == "":
-                            api.update_status(status= "@" + tweet.user.screen_name + " " + role,
-                                in_reply_to_status_id=tweet.id,)
+                            try:
+                                api.update_status(status= "@" + tweet.user.screen_name + " " + role,
+                                    in_reply_to_status_id=tweet.id,)
+                            except:
+                                logger.info("Could not reply @ ROLE")
                # Crossovers
                elif " crossover" in tweet.text.lower():
                    if any(keyword in tweet.text.lower() for keyword in [" crossover [", " crossover-safe ["]):
@@ -79,14 +85,21 @@ def check_mentions(api, since_id):
                                 if not character1 == "":
                                     character2 = get_crossover_character(actor2, safe)
                                     if not character2 == "":
-                                        api.update_status(status= "@" + tweet.user.screen_name + " " + character1 + "/" + character2,
-                                             in_reply_to_status_id=tweet.id,)
+                                        try:
+                                            api.update_status(status= "@" + tweet.user.screen_name + " " + character1 + "/" + character2,
+                                                 in_reply_to_status_id=tweet.id,)
+                                        except:
+                                            logger.info("Could not reply @ CHARACTER")
                    else:
                        # Fandom
                        fandom = get_crossover_fandom()
                        if not fandom == "":
-                            api.update_status(status= "@" + tweet.user.screen_name + " " + fandom,
-                                 in_reply_to_status_id=tweet.id,)
+                           try:
+                                api.update_status(status= "@" + tweet.user.screen_name + " " + fandom,
+                                    in_reply_to_status_id=tweet.id,)
+                           except:
+                                logger.info("Could not reply @ FANDOM")
+
     return new_since_id
 
 def main():
