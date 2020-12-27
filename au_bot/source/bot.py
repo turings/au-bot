@@ -6,8 +6,9 @@ import os
 from source.config import create_api
 from source.tools import create_file
 from source.role import get_role
-from source.character import get_crossover_character
-from source.fandom import get_crossover_fandom
+from source.character import get_xover_character
+from source.fandom import get_xover_fandom
+from source.setting import get_setting
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
@@ -26,8 +27,8 @@ def check_mentions(api, since_id):
         # Get new last mention ID
         new_since_id = max(tweet.id, new_since_id)
         # If this tweet already exists in the file, ignore it
-        if str(tweet.id) + "\n" in f:
-            continue
+        # if str(tweet.id) + "\n" in f:
+            # continue
         logger.info("Recording tweet ID")
         # Add this tweet to the file
         f.append(str(tweet.id) + "\n")
@@ -38,7 +39,7 @@ def check_mentions(api, since_id):
         if tweet.in_reply_to_status_id is not None:
             continue
         # If this tweet contains one of the keywords
-        if any(keyword in tweet.text.lower() for keyword in ["crossover", "role"]):
+        if any(keyword in tweet.text.lower() for keyword in ["xover", "role","setting"]):
                # Different roles
                if " rolediff" in tweet.text.lower():
                    safe = False
@@ -68,11 +69,11 @@ def check_mentions(api, since_id):
                             except:
                                 logger.info("Could not reply @ ROLE")
                # Crossovers
-               elif " crossover" in tweet.text.lower():
-                   if any(keyword in tweet.text.lower() for keyword in [" crossover [", " crossover-safe ["]):
+               elif " xover" in tweet.text.lower():
+                   if any(keyword in tweet.text.lower() for keyword in [" xover [", " xover-safe ["]):
                        # Characters
-                       keyword = "crossover-safe" if " crossover-safe [" in tweet.text.lower() else "crossover"
-                       safe = True if " crossover-safe [" in tweet.text.lower() else False
+                       keyword = "xover-safe" if " xover-safe [" in tweet.text.lower() else "xover"
+                       safe = True if " xover-safe [" in tweet.text.lower() else False
                        actors = tweet.text.lower().split(keyword)
                        if len(actors) == 2:
                            actors = actors[1]
@@ -82,9 +83,9 @@ def check_mentions(api, since_id):
                                 actor1 = actor1.replace("[", "").strip()
                                 actor2 = actors[1]
                                 actor2 = actor2[:actor2.find("]")]
-                                character1 = get_crossover_character(actor1, safe)
+                                character1 = get_xover_character(actor1, safe)
                                 if not character1 == "":
-                                    character2 = get_crossover_character(actor2, safe)
+                                    character2 = get_xover_character(actor2, safe)
                                     if not character2 == "":
                                         try:
                                             logger.info(f"Replying to @{tweet.user.screen_name}")
@@ -94,7 +95,7 @@ def check_mentions(api, since_id):
                                             logger.info("Could not reply @ CHARACTER")
                    else:
                        # Fandom
-                       fandom = get_crossover_fandom()
+                       fandom = get_xover_fandom()
                        if not fandom == "":
                            try:
                                 logger.info(f"Replying to @{tweet.user.screen_name}")
@@ -102,6 +103,16 @@ def check_mentions(api, since_id):
                                     in_reply_to_status_id=tweet.id,)
                            except:
                                 logger.info("Could not reply @ FANDOM")
+               elif "setting" in tweet.text.lower():
+                    safe = True if " setting-safe" in tweet.text.lower() else False
+                    setting = get_setting(safe)
+                    if not setting == "":
+                           try:
+                                logger.info(f"Replying to @{tweet.user.screen_name}")
+                                api.update_status(status= "@" + tweet.user.screen_name + " " + setting,
+                                    in_reply_to_status_id=tweet.id,)
+                           except:
+                                logger.info("Could not reply @ SETTING")
 
     return new_since_id
 

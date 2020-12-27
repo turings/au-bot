@@ -7,7 +7,7 @@ from source.tools import get_random
 logger = logging.getLogger()
 
 # Fandoms; returns a fandom
-def get_crossover_fandom():
+def get_xover_fandom():
     # Import fandoms.txt
     try:
         return choose_fandom()

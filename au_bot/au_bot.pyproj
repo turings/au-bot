@@ -37,6 +37,9 @@
     <Compile Include="source\role.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="source\setting.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="source\tools.py">
       <SubType>Code</SubType>
     </Compile>

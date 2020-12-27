@@ -11,7 +11,7 @@ logger = logging.getLogger()
 non_safe_genres = []
 
 # Crossover; returns film/tv character based on actor name
-def get_crossover_character(actor_name, safe):
+def get_xover_character(actor_name, safe):
     # Populate this list if required
     if safe:
         if len(non_safe_genres) == 0:
