@@ -94,7 +94,7 @@ au_bot: @twitter_user The 1960s California surf scene
 ## Content Filters
 
 ### Roles and Settings
-Roles related to the content types listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
+Roles and settings related to the content types listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
 <br>
 Illness & Injury (e.g., doctor, nurse)
 <br>
@@ -104,7 +104,7 @@ Alcoholism (e.g. bartender)
 <br>
 Food (e.g. chef)
 <br>
-Using the keyword ROLE-SAFE, ROLEDIFF-SAFE, and SETTING-SAFE in your request tweet excludes these roles too.
+Using the keyword ROLE-SAFE, ROLEDIFF-SAFE, and SETTING-SAFE in your request tweet excludes these roles/settings too.
 
 
 ### Crossovers
