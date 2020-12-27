@@ -3,7 +3,7 @@ A Twitter bot that generates AU prompts for fanfiction writers.
 
 # User Documentation
 ## Keywords
-N.B. None of the following keywords are case sensitive.
+N.B. None of the keywords are case sensitive.
 <br>
 ### ROLE
 Use the ROLE keyword in your tweet to generate role-based prompts.
@@ -121,3 +121,6 @@ The actor, movie and TV show data for character prompts comes from [TheMovieDB A
 
 ## Feedback
 Please submit any feedback (prompt suggestions, bug reports, complaints, etc.) to me via Twitter ([@thegardendoor](https://twitter.com/thegardendoor)).
+
+## Live Example
+[@gimmeanau](https://twitter.com/gimmeanau) is hosted on [PythonAnywhere](https://www.pythonanywhere.com/).
