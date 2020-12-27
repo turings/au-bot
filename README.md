@@ -87,7 +87,7 @@ au_bot: @twitter_user A newspaper office
 Or:
 <br>
 ```d
-twitter_user: @au_bot a setting for this dinluke fic??? please?
+twitter_user: @au_bot a setting for my dinluke fic??? please?
 au_bot: @twitter_user The 1960s California surf scene
 ```
 
