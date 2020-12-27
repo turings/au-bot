@@ -57,9 +57,8 @@ twitter_user: @au_bou I need a xover prompt, stat!
 au_bot: @twitter_user House MD
 ```
 
-
 ### XOVER [Actor Name/Actor Name]
-You can also use the CROSSOVER keyword with a specific actor pairing in [square/brackets] to generate TV/movie character crossover prompts.
+You can also use the XOVER keyword with a specific actor pairing in [square/brackets] to generate TV/movie character crossover prompts.
 <br>
 <br>
 For example:
@@ -73,6 +72,23 @@ Or, because zeitgeist:
 ```
 twitter_user: @au_bot please xover [Jensen Ackles/Misha Collins] if you’d be so kind
 au_bot: @twitter_user Jake Gray (DeVour)/Eric Bragg (Charmed)
+```
+
+### SETTING
+If you use the SETTING keyword, the bot will return an AU setting. This might be a location, a time period, or both.
+<br>
+<br>
+For example:
+<br>
+```
+twitter_user: @au_bot Hi, could you give me a SETTING??
+au_bot: @twitter_user A newspaper office
+```
+Or:
+<br>
+```d
+twitter_user: @au_bot a setting for this dinluke fic??? please?
+au_bot: @twitter_user The 1960s California surf scene
 ```
 
 ## Content Filters
@@ -92,7 +108,7 @@ Using the keyword ROLE-SAFE, ROLEDIFF-SAFE, and SETTING-SAFE in your request twe
 
 
 ### Crossovers
-Unfortunately, there is currently no content filter for **fandom** prompts.
+Unfortunately, there are currently no content filters for **fandom** prompts.
 <br>
 For **character** prompts, using the keyword XOVER-SAFE in your request tweet makes sure that characters from movies/shows with the genres 'War', 'Horror' and 'Crime' are not returned.
 <br>
