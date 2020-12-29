@@ -119,8 +119,5 @@ The popular fandoms are periodically scraped from [AO3](https://archiveofourown.
 <br>
 The actor, movie and TV show data for character prompts comes from [TheMovieDB API](https://www.themoviedb.org/documentation/api/terms-of-use).
 
-## Feedback
-Please submit any feedback (prompt suggestions, bug reports, complaints, etc.) to me via Twitter ([@thegardendoor](https://twitter.com/thegardendoor)).
-
 ## Live Example
 [@gimmeanau](https://twitter.com/gimmeanau) is hosted on [PythonAnywhere](https://www.pythonanywhere.com/).
