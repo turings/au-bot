@@ -59,7 +59,7 @@ au_bot: @twitter_user Violinist/Music Teacher
 (Please note that the bot won't always return prompts with that^ degree of congruity. You could easily get `Violinist/Tennis Coach`. I'd still read it.)
 
 ### XOVER
-Want to try writing a crossover fic? If you use the XOVER keyword, the bot will suggest a popular TV/movie fandom.
+Want to write a crossover fic? If you use the XOVER keyword, the bot will suggest a popular TV/movie fandom for you to use.
 <br>
 <br>
 For example:
