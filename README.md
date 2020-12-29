@@ -1,7 +1,7 @@
 # au-bot
 A Twitter bot that generates AU prompts for fanfiction writers.
 
-# User Documentation
+# User Guide
 ## Keywords
 N.B. None of the keywords are case sensitive.
 <br>
