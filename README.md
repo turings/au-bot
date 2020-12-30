@@ -87,7 +87,7 @@ Alcoholism (e.g. bartender)
 <br>
 Food (e.g. chef)
 <br>
-Using the keyword ROLE-SAFE, ROLEDIFF-SAFE, and SETTING-SAFE in your request tweet excludes these settings/roles too.
+Using the keyword ROLE-SAFE or SETTING-SAFE in your request tweet excludes these settings/roles too.
 
 
 ### Crossovers
