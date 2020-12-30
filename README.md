@@ -24,7 +24,7 @@ au_bot: @twitter_user The 1960s California surf scene
 ```
 
 ### ROLE
-Use the ROLE keyword in your tweet to generate role-based prompts.
+Use the ROLE keyword in your tweet to generate role-based prompts for a pairing.
 <br>
 <br>
 For example:
@@ -37,26 +37,8 @@ Or:
 <br>
 ```
 twitter_user: @au_bot Send me a sweet role prompt, dude.
-au_bot: @twitter_user 1980s yuppies
+au_bot: @twitter_user Globetrotting Business Person/Interpreter
 ```
-
-### ROLEDIFF
-Use the ROLEDIFF keyword in your tweet to generate prompts with distinct roles for a pairing.
-<br>
-<br>
-For example:
-<br>
-```
-twitter_user: @au_bot ROLEDIFF
-au_bot: @twitter_user Socialite/Tennis Coach
-```
-Or:
-<br>
-```
-twitter_user: @au_bot rolediff me!!
-au_bot: @twitter_user Violinist/Music Teacher
-```
-(Please note that the bot won't always return prompts with that^ degree of congruity. You could easily get `Violinist/Tennis Coach`. I'd still read it.)
 
 ### XOVER
 Want to write a crossover fic? If you use the XOVER keyword, the bot will suggest a popular TV/movie fandom for you to use.
