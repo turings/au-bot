@@ -24,7 +24,7 @@ au_bot: @twitter_user The 1960s California surf scene
 ```
 
 ### ROLE
-Use the ROLE keyword in your tweet to generate role-based prompts for a pairing.
+Use the ROLE keyword in your tweet to generate a role-based prompt for a pairing.
 <br>
 <br>
 For example:
