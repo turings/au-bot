@@ -1,12 +1,30 @@
 # au-bot
 A Twitter bot that generates AU prompts for fanfiction writers.
 
-# User Documentation
+# User Guide
 ## Keywords
 N.B. None of the keywords are case sensitive.
 <br>
+
+### SETTING
+If you use the SETTING keyword, the bot will return an AU setting. This might be a location, a time period, or both.
+<br>
+<br>
+For example:
+<br>
+```
+twitter_user: @au_bot SETTING
+au_bot: @twitter_user A newspaper office
+```
+Or:
+<br>
+```d
+twitter_user: @au_bot my dinluke fic needs a setting please
+au_bot: @twitter_user The 1960s California surf scene
+```
+
 ### ROLE
-Use the ROLE keyword in your tweet to generate role-based prompts.
+Use the ROLE keyword in your tweet to generate a role-based prompt for a pairing.
 <br>
 <br>
 For example:
@@ -19,29 +37,11 @@ Or:
 <br>
 ```
 twitter_user: @au_bot Send me a sweet role prompt, dude.
-au_bot: @twitter_user 1980s yuppies
+au_bot: @twitter_user Globetrotting Business Person/Interpreter
 ```
-
-### ROLEDIFF
-Use the ROLEDIFF keyword in your tweet to generate prompts with distinct roles for your pairing.
-<br>
-<br>
-For example:
-<br>
-```
-twitter_user: @au_bot ROLEDIFF
-au_bot: @twitter_user Socialite/Tennis Coach
-```
-Or:
-<br>
-```
-twitter_user: @au_bot rolediff me!!
-au_bot: @twitter_user Violinist/Music Teacher
-```
-(Please note that the bot will not always return prompts with that^ degree of congruity. You could easily get `Violinist/Tennis Coach`. I'd still read it.)
 
 ### XOVER
-If you use the XOVER keyword, the bot will return a popular TV/movie fandom.
+Want to write a crossover fic? If you use the XOVER keyword, the bot will suggest a popular TV/movie fandom for you to use.
 <br>
 <br>
 For example:
@@ -54,7 +54,7 @@ Or:
 <br>
 ```
 twitter_user: @au_bou I need a xover prompt, stat!
-au_bot: @twitter_user House MD
+au_bot: @twitter_user Grey's Anatomy
 ```
 
 ### XOVER [Actor Name/Actor Name]
@@ -74,27 +74,10 @@ twitter_user: @au_bot please xover [Jensen Ackles/Misha Collins] if you’d be s
 au_bot: @twitter_user Jake Gray (DeVour)/Eric Bragg (Charmed)
 ```
 
-### SETTING
-If you use the SETTING keyword, the bot will return an AU setting. This might be a location, a time period, or both.
-<br>
-<br>
-For example:
-<br>
-```
-twitter_user: @au_bot Hi, could you give me a SETTING??
-au_bot: @twitter_user A newspaper office
-```
-Or:
-<br>
-```d
-twitter_user: @au_bot my dinluke fic needs a setting please
-au_bot: @twitter_user The 1960s California surf scene
-```
-
 ## Content Filters
 
-### Roles and Settings
-Roles and settings related to the content types listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
+### Settings and Roles
+Settings and roles related to the content types listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
 <br>
 Illness & Injury (e.g., doctor, nurse)
 <br>
@@ -104,7 +87,7 @@ Alcoholism (e.g. bartender)
 <br>
 Food (e.g. chef)
 <br>
-Using the keyword ROLE-SAFE, ROLEDIFF-SAFE, and SETTING-SAFE in your request tweet excludes these roles/settings too.
+Using the keyword ROLE-SAFE or SETTING-SAFE in your request tweet excludes these settings/roles too.
 
 
 ### Crossovers
@@ -118,9 +101,6 @@ Characters portrayed by actors who were under the age of 18 at the time of the m
 The popular fandoms are periodically scraped from [AO3](https://archiveofourown.org/).
 <br>
 The actor, movie and TV show data for character prompts comes from [TheMovieDB API](https://www.themoviedb.org/documentation/api/terms-of-use).
-
-## Feedback
-Please submit any feedback (prompt suggestions, bug reports, complaints, etc.) to me via Twitter ([@thegardendoor](https://twitter.com/thegardendoor)).
 
 ## Live Example
 [@gimmeanau](https://twitter.com/gimmeanau) is hosted on [PythonAnywhere](https://www.pythonanywhere.com/).
