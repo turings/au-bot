@@ -40,23 +40,8 @@ def check_mentions(api, since_id):
             continue
         # If this tweet contains one of the keywords
         if any(keyword in tweet.text.lower() for keyword in ["xover", "role","setting"]):
-               # Different roles
-               if " rolediff" in tweet.text.lower():
-                   safe = False
-                   if " rolediff-safe" in tweet.text.lower():
-                       safe = True
-                   role1 = get_role(safe, False)
-                   if not role1 == "":
-                       role2 = get_role(safe, False)
-                       if not role2 == "":
-                           try:
-                                logger.info(f"Replying to @{tweet.user.screen_name}")
-                                api.update_status(status= "@" + tweet.user.screen_name + " " + role1 + "/" + role2,
-                                    in_reply_to_status_id=tweet.id,)
-                           except:
-                                logger.info("Could not reply @ ROLEDIFF")
-               # Same roles
-               elif " role" in tweet.text.lower():
+               # Roles
+               if " role" in tweet.text.lower():
                    safe = False
                    if " role-safe" in tweet.text.lower():
                        safe = True
