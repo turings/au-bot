@@ -87,7 +87,7 @@ Alcohol
 <br>
 Food
 <br>
-Using the keyword ROLE-SAFE or SETTING-SAFE in your request tweet excludes these settings/roles too.
+Using the keyword ROLE-SAFE or SETTING-SAFE in your request tweet excludes these roles/settings too.
 
 
 ### Crossovers
