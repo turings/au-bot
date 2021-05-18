@@ -83,7 +83,7 @@ Illness & Injury
 <br>
 Warfare
 <br>
-Alcoholism
+Alcohol
 <br>
 Food
 <br>
