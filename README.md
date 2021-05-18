@@ -79,13 +79,13 @@ au_bot: @twitter_user Jake Gray (DeVour)/Eric Bragg (Charmed)
 ### Settings and Roles
 Settings and roles related to the content types listed [here](https://trigger-warnings.tumblr.com/tags) are excluded as standard, apart from:
 <br>
-Illness & Injury (e.g., doctor, nurse)
+Illness & Injury
 <br>
-Warfare (e.g., soldier)
+Warfare
 <br>
-Alcoholism (e.g. bartender)
+Alcoholism
 <br>
-Food (e.g. chef)
+Food
 <br>
 Using the keyword ROLE-SAFE or SETTING-SAFE in your request tweet excludes these settings/roles too.
 
