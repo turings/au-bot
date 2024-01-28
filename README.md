@@ -103,4 +103,4 @@ The popular fandoms are periodically scraped from [AO3](https://archiveofourown.
 The actor, movie and TV show data for character prompts comes from [TheMovieDB API](https://www.themoviedb.org/documentation/api/terms-of-use).
 
 ## Live Example
-[@gimmeanau](https://twitter.com/gimmeanau) is hosted on [PythonAnywhere](https://www.pythonanywhere.com/).
+NOW DEAD: [@gimmeanau](https://twitter.com/gimmeanau) was hosted on [PythonAnywhere](https://www.pythonanywhere.com/).
